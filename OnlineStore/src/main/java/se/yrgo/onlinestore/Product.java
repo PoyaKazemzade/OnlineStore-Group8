@@ -9,19 +9,26 @@ public class Product {
     public Product(int productId, String name, double price, int quantity) {
         this.productId = productId;
         this.name = name;
-        this.price = price;
-        this.quantity = quantity;
+        if (price <= 0) {
+            throw new IllegalArgumentException("Price must be bigger than zero.");
+        }
+
+        else{
+            this.price = price;
+        }
+        if (quantity < 0) {
+            throw new IllegalArgumentException("Quantity can't be less than zero");
+        }
+        else{
+            this.quantity = quantity;
+        }
+
     }
     public Product(){
 
     }
 
-    public double totalValueOfProduct(double price, int quantity){
-        if (price <= 0) {
-            throw new IllegalArgumentException("Price must be bigger than zero.");
-        } else if (quantity < 0) {
-            throw new IllegalArgumentException("Quantity can't be less than zero");
-        }
+    public double totalValueOfProduct(){
 
         return price * quantity;
     }
