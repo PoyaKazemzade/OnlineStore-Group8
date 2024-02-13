@@ -9,8 +9,8 @@ public class ProductTest {
 
     @Test
     public void testTotalValueOfProduct(){
-        Product p1 = new Product();
-        assertEquals(p1.getPrice() * p1.getQuantity(), p1.totalValueOfProduct());
+        Product p1 = new Product(1, "Ketchup", 10, 100);
+        assertEquals(1000, p1.totalValueOfProduct());
     }
     @Test
     public void testSettingPriceToZero() throws IllegalArgumentException{
