@@ -23,7 +23,6 @@ public class Main {
         Product product6 = new Product(6, "Suit", 500.0, 1);
 
         ShoppingCart shoppingCart = new ShoppingCart();
-        System.out.println(customer);
 
         shoppingCart.addProduct(product1);
         shoppingCart.addProduct(product2);
