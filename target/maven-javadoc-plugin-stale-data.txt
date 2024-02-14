@@ -1,0 +1,42 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'OnlineStore 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'OnlineStore 1.0-SNAPSHOT API'
+se.yrgo.onlinestore
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/src/main/java = 1707741553992
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/tag-search-index.js = 1707920181519
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/overview-tree.html = 1707920181505
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/module-search-index.js = 1707920181515
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/index.html = 1707920181526
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/package-search-index.js = 1707920181515
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/jquery-ui.overrides.css = 1707920181532
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/index-all.html = 1707920181525
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/allpackages-index.html = 1707920181514
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/member-search-index.js = 1707920181519
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/script.js = 1707920181528
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/stylesheet.css = 1707920181528
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/help-doc.html = 1707920181527
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/element-list = 1707920181490
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/allclasses-index.html = 1707920181513
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/type-search-index.js = 1707920181515
+/Users/poya/javaEnterprise/development tools/OnlineStore-team-project/OnlineStore/target/site/apidocs/search.js = 1707920181529
