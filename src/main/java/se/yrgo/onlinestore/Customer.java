@@ -17,16 +17,29 @@ public class Customer {
 
 
     public Customer(int customerId, String name, String email) {
-        this.customerId = customerId;
+        if(customerId < 1){
+            throw new IllegalArgumentException("Incorrect ID");
+        }
+        else {
+            this.customerId = customerId;
+        }
         this.name = name;
-        this.email = email;
+        if (!email.contains("@")){
+            throw new IllegalArgumentException("Email must contain '@'");
+        }
+        else {
+            this.email = email;
+        }
         this.orderHistory = new ArrayList<>();
+
+    }
+    public Customer(){
 
     }
 
     public void viewOrderHistory() {
         for (ShoppingCart shoppingcart : orderHistory) {
-            System.out.println();
+            System.out.println(shoppingcart);
         }
     }
 
@@ -51,12 +64,13 @@ public class Customer {
         return orderHistory;
     }
 
+
     @Override
     public String toString() {
-        return "Customer:" + '\''+
-                "CustomerId: " + customerId + '\''+
-                "Name: " + name + '\'' +
-                "Email: " + email + '\'' +
+        return "Customer:" + "\n"+
+                "CustomerId: " + customerId + "\n"+
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n" +
                 "OrderHistory: " + orderHistory;
     }
 
