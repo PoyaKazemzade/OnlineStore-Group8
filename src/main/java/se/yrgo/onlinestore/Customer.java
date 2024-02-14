@@ -77,8 +77,8 @@ public class Customer {
         return "Customer:" + "\n"+
                 "CustomerId: " + customerId + "\n"+
                 "Name: " + name + "\n" +
-                "Email: " + email + "\n" +
-                "OrderHistory: " + orderHistory;
+                "Email: " + email + "\n";
+
     }
 
     @Override
