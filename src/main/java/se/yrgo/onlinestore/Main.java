@@ -6,7 +6,5 @@ public class Main {
         Product product2 = new Product(2, "ost", 23, 400);
         Customer customer1 = new Customer(1, "poya", "poya@gmail.com");
         ShoppingCart shoppingCart = new ShoppingCart();
-
-
     }
 }
