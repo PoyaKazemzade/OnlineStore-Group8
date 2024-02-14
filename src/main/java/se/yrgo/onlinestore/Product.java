@@ -1,7 +1,10 @@
 package se.yrgo.onlinestore;
 
 import java.util.Objects;
-
+/**
+ * The Product class represents a product in an online store.
+ * It contains information such as product ID, name, price, and quantity.
+ */
 public class Product {
     private int productId;
     private String name;
@@ -29,7 +32,10 @@ public class Product {
     public Product(){
 
     }
-
+    /**
+     * Calculates the total value of the product.
+     * @return the total value of the product
+     */
     public double totalValueOfProduct(){
 
         return price * quantity;

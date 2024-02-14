@@ -6,8 +6,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
-
+/**
+ * The Customer class represents a customer in an online store system.
+ * It contains information such as customer ID, name, email, and order history.
+ */
 public class Customer {
     private int customerId;
     private String name;
@@ -36,13 +38,18 @@ public class Customer {
     public Customer(){
 
     }
-
+    /**
+     * Displays the order history of the customer.
+     */
     public void viewOrderHistory() {
         for (ShoppingCart shoppingcart : orderHistory) {
             System.out.println(shoppingcart);
         }
     }
-
+    /**
+     * Places an order for the customer.
+     * @param shoppingCart the shopping cart representing the order to be placed
+     */
     public void placeOrder(ShoppingCart shoppingCart) {
         orderHistory.add(shoppingCart);
     }
