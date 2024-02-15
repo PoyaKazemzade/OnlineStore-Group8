@@ -7,13 +7,13 @@ import java.util.List;
  * Represents a shopping cart that holds a list of products.
  */
 public class ShoppingCart {
-    private List<Product> products;
+    private List<Product> shoppingCart;
 
     /**
      * Constructs a new empty shopping cart.
      */
     public ShoppingCart() {
-        this.products = new ArrayList<>();
+        this.shoppingCart = new ArrayList<>();
     }
 
     /**
@@ -22,7 +22,7 @@ public class ShoppingCart {
      * @param product The product to be added to the cart.
      */
     public void addProduct(Product product) {
-        products.add(product);
+        shoppingCart.add(product);
     }
 
     /**
@@ -31,11 +31,15 @@ public class ShoppingCart {
      * @param product The product to be removed from the cart.
      */
     public void removeProduct(Product product) {
-        products.remove(product);
+        if (!shoppingCart.isEmpty()) {
+            shoppingCart.remove(product);
+        } else {
+            throw new IllegalArgumentException("Your cart is empty!");
+        }
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public List<Product> getShoppingCart() {
+        return shoppingCart;
     }
 
     /**
@@ -45,7 +49,7 @@ public class ShoppingCart {
      */
     public double calculateTotalCost() {
         double totalCost = 0;
-        for (Product product : products) {
+        for (Product product : shoppingCart) {
             totalCost += product.getPrice();
         }
         return totalCost;
@@ -56,11 +60,13 @@ public class ShoppingCart {
      * If the cart is empty, prints a message indicating so.
      */
     public void viewCartItems() {
-        if (products.isEmpty()) {
-            System.out.println("Your cart is empty!");
+        if (!shoppingCart.isEmpty()) {
+            for (Product product : shoppingCart) {
+                System.out.println(product.getName());
+            }
+        } else {
+            throw new IllegalArgumentException("Your cart is empty!");
         }
-        for (Product product : products) {
-            System.out.println(product.getName());
-        }
+
     }
 }

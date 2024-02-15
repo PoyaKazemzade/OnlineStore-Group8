@@ -22,7 +22,7 @@ public class ShoppingCartTest {
     void addProductTest() {
         shoppingCart.addProduct(product1);
         shoppingCart.addProduct(product2);
-        assertEquals(2, shoppingCart.getProducts().size());
+        assertEquals(2, shoppingCart.getShoppingCart().size());
     }
 
 
@@ -31,8 +31,13 @@ public class ShoppingCartTest {
         shoppingCart.addProduct(product1);
         shoppingCart.addProduct(product2);
         shoppingCart.removeProduct(product1);
-        assertEquals(1, shoppingCart.getProducts().size());
-        assertFalse(shoppingCart.getProducts().contains(product1));
+        assertEquals(1, shoppingCart.getShoppingCart().size());
+        assertFalse(shoppingCart.getShoppingCart().contains(product1));
+    }
+
+    @Test
+    void removeFromEmptyCart(){
+        assertThrows(IllegalArgumentException.class,() -> shoppingCart.removeProduct(null));
     }
 
 
@@ -43,4 +48,8 @@ public class ShoppingCartTest {
         assertEquals(30.0, shoppingCart.calculateTotalCost());
     }
 
+    @Test
+    void viewItemsInEmptyCart(){
+        assertThrows(IllegalArgumentException.class,() -> shoppingCart.viewCartItems());
+    }
 }
